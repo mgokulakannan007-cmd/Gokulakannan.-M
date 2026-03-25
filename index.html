@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gokulakannan Portfolio</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            overflow-x: hidden;
+            background: #0d1117;
+        }
+
+        /* Mouse Glow Effect */
+        .cursor-glow {
+            position: fixed;
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, rgba(0,255,204,0.3) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+        }
+
+        /* Glass Effect */
+        .box {
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255,255,255,0.2);
+            box-shadow: 0 0 20px rgba(0,255,204,0.3);
+            transition: 0.3s;
+            position: relative;
+            z-index: 1;
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(0,255,204,0.6);
+        }
+
+        h1 {
+            color: #00ffcc;
+            margin-top: 40px;
+            font-size: 40px;
+            text-shadow: 0 0 15px #00ffcc;
+            position: relative;
+            z-index: 1;
+        }
+
+        a {
+            color: #00ffcc;
+            text-decoration: none;
+        }
+
+        img {
+            width: 150px;
+            border-radius: 50%;
+            margin-top: 20px;
+            z-index: 1;
+            position: relative;
+        }
+
+        footer {
+            margin-top: 30px;
+            color: #aaa;
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Mouse Glow -->
+    <div class="cursor-glow" id="glow"></div>
+
+    <h1>🔥 Hi, I'm Gokulakannan</h1>
+
+    <img src="profile.jpg" alt="Profile Photo">
+
+    <p>👨‍🔧 Mechanical Engineering Student</p>
+    <p>💻 Learning Coding & Technology</p>
+
+    <div class="box">
+        <h2>📌 About Me</h2>
+        <p>I am a passionate mechanical engineering student.</p>
+        <p>I love designing machines and learning new technologies.</p>
+    </div>
+
+    <div class="box">
+        <h2>⚙️ Skills</h2>
+        <p>🔧 Machine Design</p>
+        <p>📐 CAD Modeling</p>
+        <p>💻 Basic Programming</p>
+    </div>
+
+    <div class="box">
+        <h2>🚀 Projects</h2>
+        <p>🔩 Mechanical Mini Projects</p>
+        <p>📊 Engineering Assignments</p>
+    </div>
+
+    <div class="box">
+        <h2>📄 Resume</h2>
+        <a href="resume.pdf">Download Resume</a>
+    </div>
+
+    <div class="box">
+        <h2>📞 Contact</h2>
+        <p>📱 Mobile: 9655853229</p>
+        <p>📧 Email: mgokulakannan007@gmail.com</p>
+        <p>🌐 GitHub: 
+            <a href="https://github.com/gokulakannan">
+                github.com/gokulakannan
+            </a>
+        </p>
+    </div>
+
+    <footer>
+        😎 Designed by Gokulakannan | 2026
+    </footer>
+
+    <script>
+        const glow = document.getElementById("glow");
+
+        document.addEventListener("mousemove", (e) => {
+            glow.style.left = e.clientX + "px";
+            glow.style.top = e.clientY + "px";
+        });
+    </script>
+
+</body>
+</html>
